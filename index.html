@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulier</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="formulier.js" defer></script>
+</head>
+
+<body>
+    <div class="container-flex mx-3">
+        <h1>Registreer</h1>
+        <p>Meld je aan bij Anoroc Services, wij beschermen jouw software tegen malware!</p>
+        <form>
+            <div class="container-flex">
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="voornaam" class="form-label"><strong>Voornaam</strong></label>
+                            <input type="text" class="form-control" id="voornaam" placeholder="Uw voornaam">
+                        </div>
+
+                        <label for="gebruikersnaam" class="form-label"><strong>Gebruikersnaam</strong></label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="R0937453" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="wachtwoord" class="form-label"><strong>Wachtwoord</strong></label>
+                            <input type="password" class="form-control" id="wachtwoord">
+                            <div id="wachtwoordHelp" class="form-text">Je wachtwoord moet minstens 8 tekens lang zijn
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="achternaam" class="form-label"><strong>Naam</strong></label>
+                            <input type="text" class="form-control" id="achternaam" placeholder="Uw naam">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1"
+                                class="form-label"><strong>E-mailadres</strong></label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="mail@example.be">
+                        </div>
+                        <div class="mb-3">
+                            <label for="herhaalWachtwoord" class="form-label"><strong>Herhaal
+                                    wachtwoord</strong></label>
+                            <input type="password" class="form-control" id="herhaalWachtwoord">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+
+                        <div class="mb-3">
+                            <label for="adres" class="form-label"><strong>Adres</strong></label>
+                            <input type="text" class="form-control" id="adres" placeholder="Uw adres en huisnummer">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="land" class="form-label"><strong>Land</strong></label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Kies een land</option>
+                                <option value="1">België</option>
+                                <option value="2">Nederland</option>
+                                <option value="3">Duitsland</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="land" class="form-label"><strong>Provincie</strong></label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Kies een provincie</option>
+                                <option value="1">Antwerpen</option>
+                                <option value="2">Oost-Vlaanderen</option>
+                                <option value="3">Limburg</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+
+                        <div class="mb-3">
+                            <label for="postcode" class="form-label"><strong>Postcode</strong></label>
+                            <input type="number" min="0" step="1" class="form-control" id="amountInput">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <div>
+                                    <h3>Hou me op de hoogte</h3>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="nieuwsbrief">
+                                    <label class="form-check-label" for="nieuwsbrief">
+                                        Inschrijven voor onze nieuwsbrief
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="voorwaarden">
+                                    <label class="form-check-label" for="voorwaarden">
+                                        Ik ga akkoord met de algemene voorwaarden.
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            Betaling
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="bankingapp"
+                                    checked>
+                                <label class="form-check-label" for="bankingapp">
+                                    Banking app
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="overschrijving">
+                                <label class="form-check-label" for="overschrijving">
+                                    Overschrijving
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="visa">
+                                <label class="form-check-label" for="visa">
+                                    Visa card
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="paypal">
+                                <label class="form-check-label" for="paypal">
+                                    PayPal
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary w-100">Wave your magic wand</button>
+                        </div>
+                    </div>
+                </div>
+
+
+        </form>
+</body>
+
+</html>
