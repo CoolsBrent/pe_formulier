@@ -22,16 +22,17 @@
                             <div class="row">
                                 <div class="col">
                                     <div class="mb-3">
-                                        <label for="voornaam" class="form-label"><strong>Voornaam</strong></label>
-                                        <input type="text" class="form-control" id="voornaam" placeholder="Uw voornaam">
+                                        <label for="voornaam"  class="form-label"><strong id="voornaamlabel">Voornaam</strong></label>
+                                        <input type="text" class="form-control" id="voornaam" placeholder="Uw voornaam" required>
                                     </div>
-
+                                    <div class="input-group">
                                     <label for="gebruikersnaam"
-                                        class="form-label"><strong>Gebruikersnaam</strong></label>
-                                    <div class="input-group mb-3">
+                                         class="form-label"><strong id="gebruikersnaamlabel">Gebruikersnaam</strong></label>
+                                    </div>
+                                        <div class="input-group mb-3">
                                         <span class="input-group-text" id="basic-addon1">@</span>
-                                        <input type="text" class="form-control" placeholder="R0937453"
-                                            aria-label="Username" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control" id="gebruikersnaam" placeholder="R0937453"
+                                            aria-label="Username" aria-describedby="basic-addon1" required>
                                     </div>
                                     <div class="mb-3">
                                         <label for="wachtwoord" class="form-label"><strong>Wachtwoord</strong></label>
@@ -43,29 +44,31 @@
                                 </div>
                                 <div class="col">
                                     <div class="mb-3">
-                                        <label for="achternaam" class="form-label"><strong>Naam</strong></label>
-                                        <input type="text" class="form-control" id="achternaam" placeholder="Uw naam">
+                                        <label for="achternaam"  class="form-label"><strong id="naamlabel">Naam</strong></label>
+                                        <input type="text" class="form-control" id="naam" placeholder="Uw naam" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="exampleFormControlInput1"
+                                        <label for="mailadres"
                                             class="form-label"><strong>E-mailadres</strong></label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        <input type="email" class="form-control" id="mailadres"
                                             placeholder="mail@example.be">
                                     </div>
                                     <div class="mb-3">
                                         <label for="herhaalWachtwoord" class="form-label"><strong>Herhaal
                                                 wachtwoord</strong></label>
-                                        <input type="password" class="form-control" id="herhaalWachtwoord">
+                                        <input type="password" class="form-control" id="herhaalwachtwoord">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col">
 
-                                    <div class="mb-3">
-                                        <label for="adres" class="form-label"><strong>Adres</strong></label>
+                                    <div class="input-group">
+                                        <label for="adres"  class="form-label"><strong id="adreslabel">Adres</strong></label>
+                                        <div class="input-group mb-3">
                                         <input type="text" class="form-control" id="adres"
-                                            placeholder="Uw adres en huisnummer">
+                                            placeholder="Uw adres en huisnummer" required>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -73,31 +76,35 @@
                             <div class="row">
                                 <div class="col">
                                     <div class="mb-3">
-                                        <label for="land" class="form-label"><strong>Land</strong></label>
-                                        <select class="form-select" aria-label="Default select example">
+                                        <label for="land"  class="form-label"><strong id="landlabel">Land</strong></label>
+                                        <div class="mb-3">
+                                        <select class="form-select" id="land" aria-label="Default select example" required>
                                             <option selected>Kies een land</option>
                                             <option value="1">België</option>
                                             <option value="2">Nederland</option>
                                             <option value="3">Duitsland</option>
                                         </select>
                                     </div>
+                                    </div>
                                 </div>
                                 <div class="col">
                                     <div class="mb-3">
-                                        <label for="land" class="form-label"><strong>Provincie</strong></label>
-                                        <select class="form-select" aria-label="Default select example">
+                                        <label for="land"  class="form-label"><strong id="provincielabel">Provincie</strong></label>
+                                        <div class="mb-3">
+                                        <select class="form-select" id="provincie" aria-label="Default select example" required>
                                             <option selected>Kies een provincie</option>
                                             <option value="1">Antwerpen</option>
                                             <option value="2">Oost-Vlaanderen</option>
                                             <option value="3">Limburg</option>
                                         </select>
                                     </div>
+                                    </div>
                                 </div>
                                 <div class="col">
 
                                     <div class="mb-3">
                                         <label for="postcode" class="form-label"><strong>Postcode</strong></label>
-                                        <input type="number" min="0" step="1" class="form-control" id="amountInput">
+                                        <input type="number" min="0" step="1" class="form-control" id="postcode">
                                     </div>
                                 </div>
                                 <hr>
@@ -158,7 +165,7 @@
                                 <hr>
                                 <div class="row">
                                     <div class="col">
-                                        <button type="button" class="btn btn-primary w-100">Wave your magic
+                                        <button type="button" class="btn btn-primary w-100" id="button">Wave your magic
                                             wand</button>
                                     </div>
                                 </div>
