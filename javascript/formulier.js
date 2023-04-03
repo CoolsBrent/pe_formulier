@@ -48,7 +48,7 @@ function checkEmptyField(veld, melding) {
   }
 }
 function validateEmail(mailAdres) {
-  let juisteMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  let juisteMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;   //https://www.simplilearn.com/tutorials/javascript-tutorial/email-validation-in-javascript
   if (mailAdres.value == "") {
     error = `Het veld email is vereist.`;
     foutmelding.push(error);
