@@ -29,6 +29,11 @@ let foutmelding = []
 let error = ""
 let payment = []
 let message = ""
+let col = document.querySelector('#column')
+let groen = document.querySelector('#groen')
+let blauw = document.querySelector('#blauw')
+let rood = document.querySelector('#rood')
+let alerts = document.querySelector('#alerts')
 function checkEmptyField(veld,melding)
 {
     if (veld.value == "") {
@@ -138,6 +143,7 @@ else{
 }
 function validateForm()
 {
+    
     verkeerd.innerHTML = ""
     checkEmptyField(voornaam,voornaamLabel.innerHTML)
     checkEmptyField(naam, naamLabel.innerHTML)
@@ -154,23 +160,37 @@ function validateForm()
     checkPC(postcode)
     validateTerms(voorwaarden)
     if (foutmelding == "") {
+        
+        groen.style.visibility = 'visible'
+        blauw.style.visibility ='visible'
+        rood.style.visibility = 'hidden'
         succes.innerHTML = 'Aww yeah, je werd geregistreerd.'
+        payment.forEach(element =>{
+            betalingswijze.innerHTML = element
+            
+        });
+    }
+    else {
+        rood.style.visibility ='visible'
+        groen.style.visibility = 'hidden'
+        blauw.style.visibility = 'hidden'
+        foutmelding.forEach(element => {
+        
+            verkeerd.innerHTML += element + "<br>";
+        });
     }
     
-    foutmelding.forEach(element => {
-        
-        verkeerd.innerHTML += element + "<br>";
-    });
-    payment.forEach(element =>{
-    betalingswijze.innerHTML = element
     
-});
     
 foutmelding = []
-
+alerts.style.visibility = 'visible'
 
 }
 
 
+alerts.style.visibility = 'hidden'
+groen.style.visibility = 'hidden'
+blauw.style.visibility = 'hidden'
+rood.style.visibility = 'hidden'
 button.addEventListener('click', validateForm)
 
