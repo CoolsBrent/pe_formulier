@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulier</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css.css">
     <script src="./formulier.js" defer></script>
 </head>
 
@@ -23,94 +22,96 @@
                             <div class="row">
                                 <div class="col-sm">
                                     <div class="mb-3">
-                                        <label for="voornaam"  class="form-label"><strong id="voornaamlabel">Voornaam</strong></label>
-                                        <input type="text" class="form-control" id="voornaam" placeholder="Uw voornaam" required>
+                                        <label for="voornaam" class="form-label"><strong
+                                                id="voornaamlabel">Voornaam</strong></label>
+                                        <input type="text" class="form-control" id="voornaam" placeholder="Uw voornaam"
+                                            required>
                                     </div>
-                                    
-                                    
                                 </div>
                                 <div class="col-sm">
                                     <div class="mb-3">
-                                        <label for="achternaam"  class="form-label"><strong id="naamlabel">Naam</strong></label>
-                                        <input type="text" class="form-control" id="naam" placeholder="Uw naam" required>
+                                        <label for="achternaam" class="form-label"><strong
+                                                id="naamlabel">Naam</strong></label>
+                                        <input type="text" class="form-control" id="naam" placeholder="Uw naam"
+                                            required>
                                     </div>
-                                    
-                                    
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col">
                                     <div class="input-group">
-                                        <label for="gebruikersnaam"
-                                             class="form-label"><strong id="gebruikersnaamlabel">Gebruikersnaam</strong></label>
+                                        <label for="gebruikersnaam" class="form-label"><strong
+                                                id="gebruikersnaamlabel">Gebruikersnaam</strong></label>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                        <input type="text" class="form-control" id="gebruikersnaam"
+                                            placeholder="R0937453" aria-label="Username" aria-describedby="basic-addon1"
+                                            required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mailadres" class="form-label"><strong>E-mailadres</strong></label>
+                                        <input type="email" class="form-control" id="mailadres"
+                                            placeholder="mail@example.be">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="wachtwoord" class="form-label"><strong>Wachtwoord</strong></label>
+                                        <input type="password" class="form-control" id="wachtwoord">
+                                        <div id="wachtwoordHelp" class="form-text">Je wachtwoord moet minstens 8 tekens
+                                            lang zijn
                                         </div>
-                                            <div class="input-group mb-3">
-                                            <span class="input-group-text" id="basic-addon1">@</span>
-                                            <input type="text" class="form-control" id="gebruikersnaam" placeholder="R0937453"
-                                                aria-label="Username" aria-describedby="basic-addon1" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="mailadres"
-                                                class="form-label"><strong>E-mailadres</strong></label>
-                                            <input type="email" class="form-control" id="mailadres"
-                                                placeholder="mail@example.be">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="wachtwoord" class="form-label"><strong>Wachtwoord</strong></label>
-                                            <input type="password" class="form-control" id="wachtwoord">
-                                            <div id="wachtwoordHelp" class="form-text">Je wachtwoord moet minstens 8 tekens
-                                                lang zijn
-                                            </div>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="herhaalWachtwoord" class="form-label"><strong>Herhaal
-                                                    wachtwoord</strong></label>
-                                            <input type="password" class="form-control" id="herhaalwachtwoord">
-                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="herhaalWachtwoord" class="form-label"><strong>Herhaal
+                                                wachtwoord</strong></label>
+                                        <input type="password" class="form-control" id="herhaalwachtwoord">
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col">
-
                                     <div class="input-group">
-                                        <label for="adres"  class="form-label"><strong id="adreslabel">Adres</strong></label>
+                                        <label for="adres" class="form-label"><strong
+                                                id="adreslabel">Adres</strong></label>
                                         <div class="input-group mb-3">
-                                        <input type="text" class="form-control" id="adres"
-                                            placeholder="Uw adres en huisnummer" required>
+                                            <input type="text" class="form-control" id="adres"
+                                                placeholder="Uw adres en huisnummer" required>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col">
                                     <div class="mb-3">
-                                        <label for="land"  class="form-label"><strong id="landlabel">Land</strong></label>
+                                        <label for="land" class="form-label"><strong
+                                                id="landlabel">Land</strong></label>
                                         <div class="mb-3">
-                                        <select class="form-select" id="land" aria-label="Default select example" required>
-                                            <option selected>Kies een land</option>
-                                            <option value="1">België</option>
-                                            <option value="2">Nederland</option>
-                                            <option value="3">Duitsland</option>
-                                        </select>
-                                    </div>
+                                            <select class="form-select" id="land" aria-label="Default select example"
+                                                required>
+                                                <option selected>Kies een land</option>
+                                                <option value="1">België</option>
+                                                <option value="2">Nederland</option>
+                                                <option value="3">Duitsland</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="mb-3">
-                                        <label for="land"  class="form-label"><strong id="provincielabel">Provincie</strong></label>
+                                        <label for="land" class="form-label"><strong
+                                                id="provincielabel">Provincie</strong></label>
                                         <div class="mb-3">
-                                        <select class="form-select" id="provincie" aria-label="Default select example" required>
-                                            <option selected>Kies een provincie</option>
-                                            <option value="1">Antwerpen</option>
-                                            <option value="2">Oost-Vlaanderen</option>
-                                            <option value="3">Limburg</option>
-                                        </select>
-                                    </div>
+                                            <select class="form-select" id="provincie"
+                                                aria-label="Default select example" required>
+                                                <option selected>Kies een provincie</option>
+                                                <option value="1">Antwerpen</option>
+                                                <option value="2">Oost-Vlaanderen</option>
+                                                <option value="3">Limburg</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col">
-
                                     <div class="mb-3">
                                         <label for="postcode" class="form-label"><strong>Postcode</strong></label>
                                         <input type="number" min="0" step="1" class="form-control" id="postcode">
@@ -149,8 +150,8 @@
                                             </label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" id="overschrijving" type="radio" name="flexRadioDefault"
-                                            value="overschrijving">
+                                            <input class="form-check-input" id="overschrijving" type="radio"
+                                                name="flexRadioDefault" value="overschrijving">
                                             <label class="form-check-label" for="overschrijving">
                                                 Overschrijving
                                             </label>
@@ -180,23 +181,22 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col" id="column" >
+                        <div class="col" id="column">
                             <div class="col">
                                 <div id="alerts">
-                                <div class="alert alert-success" id="groen" role="alert">
-                                    <h4 class="alert-heading">Goed gedaan!</h4>
-                                    <p id="succes"></p>
+                                    <div class="alert alert-success" id="groen" role="alert">
+                                        <h4 class="alert-heading">Goed gedaan!</h4>
+                                        <p id="succes"></p>
+                                    </div>
+                                    <div class="alert alert-primary" id="blauw" role="alert">
+                                        <h4 class="alert-heading">Betalingswijze</h4>
+                                        <p id="betalingswijze"></p>
+                                    </div>
+                                    <div class="alert alert-danger" id="rood" role="alert">
+                                        <h4 class="alert-heading">Yikes, errors...</h4>
+                                        <p id="verkeerd"></p>
+                                    </div>
                                 </div>
-                                <div class="alert alert-primary" id="blauw" role="alert">
-                                    <h4 class="alert-heading">Betalingswijze</h4>
-                                    <p id="betalingswijze"></p>
-                                </div>
-                                <div class="alert alert-danger" id="rood" role="alert">
-                                    <h4 class="alert-heading">Yikes, errors...</h4>
-                                    <p id="verkeerd"></p>
-                                </div>
-                                
-                            </div>
                             </div>
                         </div>
                     </div>
