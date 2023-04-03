@@ -1,3 +1,4 @@
+
 let voornaam = document.querySelector('#voornaam')
 let voornaamLabel = document.querySelector('#voornaamlabel')
 let gebruikersnaam = document.querySelector('#gebruikersnaam')
@@ -34,6 +35,8 @@ let groen = document.querySelector('#groen')
 let blauw = document.querySelector('#blauw')
 let rood = document.querySelector('#rood')
 let alerts = document.querySelector('#alerts')
+
+
 function checkEmptyField(veld,melding)
 {
     if (veld.value == "") {
