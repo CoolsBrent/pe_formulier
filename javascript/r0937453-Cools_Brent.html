@@ -28,39 +28,47 @@
                                             required>
                                     </div>
                                 </div>
+                                
                                 <div class="col-sm">
                                     <div class="mb-3">
-                                        <label for="achternaam" class="form-label"><strong
-                                                id="naamlabel">Naam</strong></label>
-                                        <input type="text" class="form-control" id="naam" placeholder="Uw naam"
-                                            required>
+                                        <label for="achternaam" class="form-label"><strong id="naamlabel">Naam</strong></label>
+                                        <input type="text" class="form-control" id="naam" placeholder="Uw naam" required>
                                     </div>
                                 </div>
+                            
+                                
                             </div>
                             <div class="row">
-                                <div class="col">
+                                <div class="col-lg">
                                     <div class="input-group">
                                         <label for="gebruikersnaam" class="form-label"><strong
                                                 id="gebruikersnaamlabel">Gebruikersnaam</strong></label>
                                     </div>
                                     <div class="input-group mb-3">
                                         <span class="input-group-text" id="basic-addon1">@</span>
-                                        <input type="text" class="form-control" id="gebruikersnaam"
-                                            placeholder="R0937453" aria-label="Username" aria-describedby="basic-addon1"
-                                            required>
+                                        <input type="text" class="form-control" id="gebruikersnaam" placeholder="R0937453"
+                                            aria-label="Username" aria-describedby="basic-addon1" required>
                                     </div>
+                                </div>
+                                <div class="col-lg">
                                     <div class="mb-3">
                                         <label for="mailadres" class="form-label"><strong>E-mailadres</strong></label>
-                                        <input type="email" class="form-control" id="mailadres"
-                                            placeholder="mail@example.be">
+                                        <input type="email" class="form-control" id="mailadres" placeholder="mail@example.be">
                                     </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg">
                                     <div class="mb-3">
                                         <label for="wachtwoord" class="form-label"><strong>Wachtwoord</strong></label>
                                         <input type="password" class="form-control" id="wachtwoord">
-                                        <div id="wachtwoordHelp" class="form-text">Je wachtwoord moet minstens 8 tekens
+                                        <div id="wachtwoordHelp" class="form-text">Je wachtwoord moet minstens 8
+                                            tekens
                                             lang zijn
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col-lg">
                                     <div class="mb-3">
                                         <label for="herhaalWachtwoord" class="form-label"><strong>Herhaal
                                                 wachtwoord</strong></label>
@@ -68,11 +76,11 @@
                                     </div>
                                 </div>
                             </div>
+        
                             <div class="row">
                                 <div class="col">
                                     <div class="input-group">
-                                        <label for="adres" class="form-label"><strong
-                                                id="adreslabel">Adres</strong></label>
+                                        <label for="adres" class="form-label"><strong id="adreslabel">Adres</strong></label>
                                         <div class="input-group mb-3">
                                             <input type="text" class="form-control" id="adres"
                                                 placeholder="Uw adres en huisnummer" required>
@@ -83,11 +91,9 @@
                             <div class="row">
                                 <div class="col">
                                     <div class="mb-3">
-                                        <label for="land" class="form-label"><strong
-                                                id="landlabel">Land</strong></label>
+                                        <label for="land" class="form-label"><strong id="landlabel">Land</strong></label>
                                         <div class="mb-3">
-                                            <select class="form-select" id="land" aria-label="Default select example"
-                                                required>
+                                            <select class="form-select" id="land" aria-label="Default select example" required>
                                                 <option selected>Kies een land</option>
                                                 <option value="1">België</option>
                                                 <option value="2">Nederland</option>
@@ -101,8 +107,8 @@
                                         <label for="land" class="form-label"><strong
                                                 id="provincielabel">Provincie</strong></label>
                                         <div class="mb-3">
-                                            <select class="form-select" id="provincie"
-                                                aria-label="Default select example" required>
+                                            <select class="form-select" id="provincie" aria-label="Default select example"
+                                                required>
                                                 <option selected>Kies een provincie</option>
                                                 <option value="1">Antwerpen</option>
                                                 <option value="2">Oost-Vlaanderen</option>
@@ -125,15 +131,13 @@
                                                 <h3>Hou me op de hoogte</h3>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="nieuwsbrief">
+                                                <input class="form-check-input" type="checkbox" value="" id="nieuwsbrief">
                                                 <label class="form-check-label" for="nieuwsbrief">
                                                     Inschrijven voor onze nieuwsbrief
                                                 </label>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="voorwaarden">
+                                                <input class="form-check-input" type="checkbox" value="" id="voorwaarden">
                                                 <label class="form-check-label" for="voorwaarden">
                                                     Ik ga akkoord met de algemene voorwaarden.
                                                 </label>
@@ -143,8 +147,8 @@
                                     <div class="col">
                                         Betaling
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                id="bankingapp" value="bankingapp" checked>
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="bankingapp"
+                                                value="bankingapp" checked>
                                             <label class="form-check-label" for="bankingapp">
                                                 Banking app
                                             </label>
@@ -157,15 +161,15 @@
                                             </label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                id="visa" value="visa">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="visa"
+                                                value="visa">
                                             <label class="form-check-label" for="visa">
                                                 Visa card
                                             </label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                id="paypal" value="paypal">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="paypal"
+                                                value="paypal">
                                             <label class="form-check-label" for="paypal">
                                                 PayPal
                                             </label>
@@ -181,27 +185,26 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col" id="column">
-                            <div class="col">
-                                <div id="alerts">
-                                    <div class="alert alert-success" id="groen" role="alert">
-                                        <h4 class="alert-heading">Goed gedaan!</h4>
-                                        <p id="succes"></p>
-                                    </div>
-                                    <div class="alert alert-primary" id="blauw" role="alert">
-                                        <h4 class="alert-heading">Betalingswijze</h4>
-                                        <p id="betalingswijze"></p>
-                                    </div>
-                                    <div class="alert alert-danger" id="rood" role="alert">
-                                        <h4 class="alert-heading">Yikes, errors...</h4>
-                                        <p id="verkeerd"></p>
-                                    </div>
+                        <div class="col-sm">
+                            <div id="alerts">
+                                <div class="alert alert-success" id="groen" role="alert">
+                                    <h4 class="alert-heading">Goed gedaan!</h4>
+                                    <p id="succes"></p>
+                                </div>
+                                <div class="alert alert-primary" id="blauw" role="alert">
+                                    <h4 class="alert-heading">Betalingswijze</h4>
+                                    <p id="betalingswijze"></p>
+                                </div>
+                                <div class="alert alert-danger" id="rood" role="alert">
+                                    <h4 class="alert-heading">Yikes, errors...</h4>
+                                    <p id="verkeerd"></p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
-
+                
             </div>
         </form>
     </div>
