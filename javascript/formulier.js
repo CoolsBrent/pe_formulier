@@ -29,7 +29,6 @@ let foutmelding = [];
 let error = "";
 let payment = [];
 let message = "";
-let col = document.querySelector("#column");
 let groen = document.querySelector("#groen");
 let blauw = document.querySelector("#blauw");
 let rood = document.querySelector("#rood");
@@ -40,10 +39,10 @@ function checkEmptyField(veld, melding) {
     error = `Het veld ${melding.toLowerCase()} is vereist.`;
     foutmelding.push(error);
   } else if (veld.value == "Kies een provincie") {
-    error = `Het veld ${melding.toLowerCase()} is vereist.`;
+    error = `${melding} is vereist.`;
     foutmelding.push(error);
   } else if (veld.value == "Kies een land") {
-    error = `Het veld ${melding.toLowerCase()} is vereist.`;
+    error = `${melding} is vereist.`;
     foutmelding.push(error);
   }
 }
@@ -67,7 +66,7 @@ function checkPassword(wachtwoord, herhaalWachtwoord) {
   } else if (wachtwoord.value.length < 8) {
     error = "Je wachtwood is te kort.";
     foutmelding.push(error);
-  } else if (herhaalWachtwoord.value == "") {
+  } if (herhaalWachtwoord.value == "") {
     error = `Het veld herhaal wachtwoord is vereist.`;
     foutmelding.push(error);
   } else if (wachtwoord.value != herhaalWachtwoord.value) {
@@ -94,7 +93,7 @@ function validatePayment(veld) {
 }
 function checkPC(veld) {
   if (veld.value == "") {
-    error = "Het veld postcode is vereist.";
+    error = "Postcode is vereist.";
     foutmelding.push(error);
   } else if (veld.value < 1000 || veld.value > 9999) {
     error = "De waarde van postcode moet tussen 1000 en 9999 liggen.";
@@ -114,11 +113,11 @@ function validateForm() {
   checkEmptyField(voornaam, voornaamLabel.innerHTML);
   checkEmptyField(naam, naamLabel.innerHTML);
   checkEmptyField(gebruikersnaam, gebruikersnaamLabel.innerHTML);
+  validateEmail(mailAdres);
+  checkPassword(wachtwoord, herhaalWachtwoord);
   checkEmptyField(adres, adresLabel.innerHTML);
   checkEmptyField(land, landLabel.innerHTML);
   checkEmptyField(provincie, provincieLabel.innerHTML);
-  validateEmail(mailAdres);
-  checkPassword(wachtwoord, herhaalWachtwoord);
   validatePayment(bankingapp);
   validatePayment(overschrijving);
   validatePayment(visa);
