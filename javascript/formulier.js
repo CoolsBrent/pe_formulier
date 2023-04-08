@@ -34,8 +34,6 @@ let blauw = document.querySelector("#blauw");
 let rood = document.querySelector("#rood");
 let alerts = document.querySelector("#alerts");
 
-
-
 function checkEmptyField(veld, melding) {
   if (veld.value == "") {
     error = `Het veld ${melding.toLowerCase()} is vereist.`;
@@ -49,7 +47,7 @@ function checkEmptyField(veld, melding) {
   }
 }
 function validateEmail(mailAdres) {
-  let juisteMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;   //https://www.simplilearn.com/tutorials/javascript-tutorial/email-validation-in-javascript
+  let juisteMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; //https://www.simplilearn.com/tutorials/javascript-tutorial/email-validation-in-javascript
   if (mailAdres.value == "") {
     error = `Het veld email is vereist.`;
     foutmelding.push(error);
@@ -66,9 +64,10 @@ function checkPassword(wachtwoord, herhaalWachtwoord) {
     error = `Het veld wachtwoord is vereist.`;
     foutmelding.push(error);
   } else if (wachtwoord.value.length < 8) {
-    error = "Je wachtwood is te kort.";
+    error = "Je wachtwoord is te kort.";
     foutmelding.push(error);
-  } if (herhaalWachtwoord.value == "") {
+  }
+  if (herhaalWachtwoord.value == "") {
     error = `Het veld herhaal wachtwoord is vereist.`;
     foutmelding.push(error);
   } else if (wachtwoord.value != herhaalWachtwoord.value) {
@@ -145,7 +144,6 @@ function validateForm() {
 
   foutmelding = [];
   alerts.style.display = "block";
- 
 }
 
 alerts.style.display = "none";
