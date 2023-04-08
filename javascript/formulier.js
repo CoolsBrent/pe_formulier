@@ -34,6 +34,8 @@ let blauw = document.querySelector("#blauw");
 let rood = document.querySelector("#rood");
 let alerts = document.querySelector("#alerts");
 
+
+
 function checkEmptyField(veld, melding) {
   if (veld.value == "") {
     error = `Het veld ${melding.toLowerCase()} is vereist.`;
@@ -125,28 +127,30 @@ function validateForm() {
   checkPC(postcode);
   validateTerms(voorwaarden);
   if (foutmelding == "") {
-    groen.style.visibility = "visible";
-    blauw.style.visibility = "visible";
-    rood.style.visibility = "hidden";
+    groen.style.display = "block";
+    blauw.style.display = "block";
+    rood.style.display = "none";
     succes.innerHTML = "Aww yeah, je werd geregistreerd.";
     payment.forEach((element) => {
       betalingswijze.innerHTML = element;
     });
   } else {
-    rood.style.visibility = "visible";
-    groen.style.visibility = "hidden";
-    blauw.style.visibility = "hidden";
+    rood.style.display = "block";
+    groen.style.display = "none";
+    blauw.style.display = "none";
     foutmelding.forEach((element) => {
       verkeerd.innerHTML += element + "<br>";
     });
   }
 
   foutmelding = [];
-  alerts.style.visibility = "visible";
+  alerts.style.display = "block";
+ 
 }
 
-alerts.style.visibility = "hidden";
-groen.style.visibility = "hidden";
-blauw.style.visibility = "hidden";
-rood.style.visibility = "hidden";
+alerts.style.display = "none";
+groen.style.display = "none";
+blauw.style.display = "none";
+rood.style.display = "none";
+
 button.addEventListener("click", validateForm);
